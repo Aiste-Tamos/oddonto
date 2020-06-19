@@ -1,0 +1,35 @@
+.header {
+    background-color: $color-primary;
+    grid-column: full-start / col-end 7;
+    background-image: linear-gradient(rgba($color-grey-light-1, .93), rgba($color-primary-dark, .73)), url(../img/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 8rem;
+    padding-top: 4rem;
+
+    display: grid;
+    grid-template-rows: 1fr min-content minmax(6rem, min-content) min-content 1fr;
+    grid-template-columns: minmax(min-content, max-content);
+    grid-row-gap: 1.5rem;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-large) {
+        grid-column: 1 / -1;
+        
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 5rem;
+     
+    }
+
+    &__logo {
+        height: 11rem;
+        justify-self: center;
+    }
+
+    &__btn {
+        align-self: start;
+        justify-self: start;
+    }
+}

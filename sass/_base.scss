@@ -1,0 +1,62 @@
+// COLOR VARIABLES
+$color-primary: #8bddcf;
+$color-primary-dark: #60bbac;
+
+$color-secondary: #00dacb;
+$color-tertiary: #da002f;
+
+$color-grey-light-1: #f6f9f9;
+$color-grey-light-2: #c1e9e2;
+$color-white: #ffff;
+
+$color-grey-dark-1: #53676d;
+$color-grey-dark-2: #505353;
+
+//SHADOW
+$text-shadow: 1px 1px 5px rgba(#000000, .2);
+$text-shadow-strong: 1px 1px 5px rgba(#000000, .8);
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Montserrat', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; //1200px 
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //10px/16px = 62,5%, so the 1 rem=10px
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-grey-light-2;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: min-content 90vh 50vh 50vw repeat(3, min-content);  
+    //80vh - viewport height, min-content - adapts on content size, 40vw - viewport width
+    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] minmax(8rem, 1fr) [full-end];
+
+    @media only screen and (max-width: $bp-large) {
+        grid-template-rows: min-content 100vh 50vh repeat(4, min-content);  
+    }
+}

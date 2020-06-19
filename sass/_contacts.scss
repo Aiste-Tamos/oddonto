@@ -1,0 +1,53 @@
+.contacts {
+    background-image: linear-gradient(to right, rgba($color-grey-light-2, .5), transparent), url(../img/brush.jpg);
+    background-size: cover;
+    background-position: left;
+    grid-column: full-start / full-end;
+    padding: 5rem;
+
+    &__paragraph {
+        color: $color-white;
+        text-shadow: $text-shadow;
+        font-size: 2rem;
+    }
+
+    &__link {
+    text-decoration: none;
+    font-family: $font-display;
+    font-weight: 300;
+    font-size: 2rem;
+    color: $color-white;
+    text-shadow: $text-shadow;
+
+    &:hover {
+        background-color: rgba($color-primary, .3);
+    }
+    }
+}
+
+.map {
+    width: 50%;
+    position: relative;
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 65%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        width: 75%;
+    }
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-top: 70%;
+    height: 0;
+    
+  .googlemap {
+    top: 0;
+    left: 0;
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute; 
+}
+}

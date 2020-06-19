@@ -1,0 +1,46 @@
+.service {
+    background-color: $color-secondary;
+    grid-column: col-start 8 / full-end;
+    grid-template-columns: minmax(min-content, max-content);
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-row-gap: 1rem;
+    padding: 2rem;
+    
+    @media only screen and (max-width: $bp-large) {
+        display: none;
+    
+    }
+
+    &__list {
+        display: grid;
+        
+        grid-row-gap: 3vh;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: repeat(3, min-content max-content);
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns: min-content max-content;
+         }
+    }
+
+    
+    &__text {
+        color: $color-grey-dark-2;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    &__btn {
+        width: 100%;
+
+        &:hover {
+        background-color: $color-grey-light-2;
+        }
+    }
+}
