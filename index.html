@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,300;0,400;1,400|Nunito:300,300i" rel="stylesheet">
+        <link rel="stylesheet" href="sass/main.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+        <script src="script.js"></script>
+        
+        <title>Oddonto &mdash; odontologijos paslaugos</title>
+
+        <script>
+            function closeNav() {
+              document.getElementById("navi-toggle").checked = false;
+            }
+          </script>
+
+    </head>
+    <body class="container">
+        <div class="navbar">
+            <ul class="nav">
+                <li class="nav__item"><a href="#apie" class="nav__link">Apie Oddonto</a></li>
+                <li class="nav__item"><a href="#paslaugos" class="nav__link">Paslaugos</a></li>
+                <li class="nav__item"><a href="#gydytojai" class="nav__link">Gydytojai</a></li>
+                <li class="nav__item"><a href="img/Kainorastis.pdf" class="nav__link" target="_blank">Kainoraštis</a></li>
+                <li class="nav__item"><a href="#kontaktai" class="nav__link">Kontaktai</a></li>
+            </ul>
+            </div>
+
+
+            <div class="navigation">
+                <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+                <label for="navi-toggle" class="navigation__button">
+                    <span class="navigation__icon">&nbsp;</span>
+                </label>
+
+                <div class="navigation__background">&nbsp;</div>
+                <nav class="navigation__navv" id="navv">
+                    <ul class="listt">
+                            <li class="listt__itemm"><a href="#apie" class="listt__linkk" onclick="closeNav()">Apie Oddonto</a></li>
+                            <li class="listt__itemm"><a href="#paslaugos" class="listt__linkk" onclick="closeNav()">Paslaugos</a></li>
+                            <li class="listt__itemm"><a href="#gydytojai" class="listt__linkk" onclick="closeNav()">Gydytojai</a></li>
+                            <li class="listt__itemm"><a href="#registracija" class="listt__linkk" onclick="closeNav()">Registracija internetu</a></li>
+                            <li class="listt__itemm"><a href="tel:8-600-0000" class="listt__linkk" onclick="closeNav()">Registracija telefonu</a></li>
+                            <li class="listt__itemm"><a href="img/Kainorastis.pdf" class="listt__linkk" onclick="closeNav()">Kainoraštis</a></li>
+                            <li class="listt__itemm"><a href="#kontaktai" class="listt__linkk" onclick="closeNav()">Kontaktai</a></li>
+                        </ul>
+                    </nav>
+            </div> 
+
+        <header class="header">
+           <img src="img/logo.png" alt="Oddonto logo" class="header__logo">
+           <h3 class="heading-3 heading-3--light">Geriausi specialistai pasirūpins Jūsų sveikata</h3>
+           <h1 class="heading-1">Odontologijos paslaugos</h1>
+           <a href="#registracija" class="btn header__btn">Registracija internetu</a>
+           <a href="tel:8-600-0000" class="btn header__btn">+3706000000</a>
+           
+        </header>
+
+        <div class="service">
+            <h3 class="heading-3 heading-3--light">Paslaugos</h3>
+            <div class="service__list">
+                
+                <div class="service__details">
+                    <h4 class="heading-4 heading-4--light">Estetinis plombavimas</h4>
+                    <p class="service__text">Džiaukitės gražia dantų forma ir balta jų spalva</p>
+                </div>
+                
+                <div class="service__details">
+                    <h4 class="heading-4 heading-4--light">Dantų plombavimas</h4>
+                    <p class="service__text">Saugomas danties emalis ir dentinas nuo infekcijų</p>
+                </div>
+            
+                <div class="service__details">
+                    <h4 class="heading-4 heading-4--light">Periodontologija</h4>
+                    <p class="service__text">Uždegiminių ligų gydymas</p>
+                </div>
+                
+                <div class="service__details">
+                    <h4 class="heading-4 heading-4--light">Chirurginis gydymas</h4>
+                    <p class="service__text">Pažengusių ligų gydymas</p>
+                </div>
+
+                <a href="#paslaugos"><button class="btn service__btn">Daugiau</button></a>
+            </div>
+        </div>
+
+        <div class="story__pictures">
+            <img src="img/doctor2.jpg" alt="Doctor2" class="story__img--1">
+            <img src="img/doctor.jpg" alt="Doctor" class="story__img--2">
+        </div>
+
+        <div class="story__content" id="apie">
+            <h2 class="heading-2 mb-lg">Apie Oddonto</h2>
+            <p>Klinikoje „Oddonto“ Kaune gydome pacientus nuo 2015 metų. Subūrėme profesionalus, kad užtikrintume geriausią gydymo kokybę. Gydytojai kasmet kelia kvalifikaciją, nuolat atnaujiname technologijas ir dirbame su geriausiai vertinamomis priemonėmis. Kviečiame atvykti pas mus! <br> 
+                <a href="#kontaktai" class="paragraph__link">Kontaktai &darr; </a> <p>
+        </div>
+
+        <section class="features" id="paslaugos">
+            <h2 class="heading-2 features__text mt-md">Paslaugos</h2>
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#mouthwash"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">Dantų higiena</h4>
+                <p class="feature__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
+            </div>
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#braces"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">Dantų taisymas vaikams</h4>
+                <p class="feature__text">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.</p>
+            </div>
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#pin"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">Klinika arčiau Jūsų</h4>
+                <p class="feature__text">Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.</p>
+            </div>
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#dentistry"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">Plombavimas</h4>
+                <p class="feature__text">Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#tooth"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">Periodontologija</h4>
+                <p class="feature__text">Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
+            </div>
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#chair"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">Chirurginis gydymas</h4>
+                <p class="feature__text">Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.</p>
+            </div>
+        </section> 
+
+
+       
+        
+        <section class="doctors" id="gydytojai">
+            <h3 class="heading-2 doctors__text mt-md">Mūsų gydytojai - aukščiausio lygio specialistai</h3>
+            <div class="doctor">
+                <img src="img/juras.jpg" alt="Gydytojas" class="doctor__img">
+                <h5 class="doctor__name">dr. Laimonas Juras</h5>
+                <div class="doctor__about">
+                <div class="doctor__specialty">
+                    <p>chirurgija</p>
+                </div>
+                <div class="doctor__more ">
+                    <p class="doctor__paragraph">Burnos, veido ir žandikaulių chirurgas.</p>
+                </div>
+            </div>
+            </div>
+            </div>
+
+           <div class="doctor">
+                <img src="img/urbonaite.jpg" alt="Gydytoja" class="doctor__img">
+                <h5 class="doctor__name">Gertrūda Urbonaitė</h5>
+                <div class="doctor__about">
+                <div class="doctor__specialty">
+                    <p>periodontologija</p>
+                </div>
+                <div class="doctor__more">
+                    <p class="doctor__paragraph">Periodonto ligų gydymas, dantenų estetika bei plastika. </p>
+                </div>
+            </div>
+                
+            </div>
+
+            <div class="doctor">
+                <img src="img/gradauskiene.jpg" alt="Gydytoja" class="doctor__img">
+                <h5 class="doctor__name">Birutė Gradauskienė</h5>
+                <div class="doctor__about">
+                <div class="doctor__specialty">
+                    <p>dantų plombavimas</p>
+                </div>
+                <div class="doctor__more">
+                    <p class="doctor__paragraph">Ilgametė patirtis terapiniame ir estetiniame plombavime.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="doctor">
+                <img src="img/tumas.jpg" alt="Gydytojas" class="doctor__img">
+                <h5 class="doctor__name">Dominykas Tumas</h5>
+                <div class="doctor__about">
+                <div class="doctor__specialty">
+                    <p>vaikų odontologija</p>
+                </div>
+                <div class="doctor__more">
+                    <p class="doctor__paragraph">Draugiškai ir be streso net su mažiausiais pacientais.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="doctor">
+                <img src="img/baniene.jpg" alt="Gydytoja" class="doctor__img">
+                <h5 class="doctor__name">Adrija Banienė</h5>
+                <div class="doctor__about">
+                <div class="doctor__specialty">
+                    <p>burnos higiena</p>
+                </div>
+                <div class="doctor__more">
+                    <p class="doctor__paragraph">Efektyvi apsauga nuo ėduonies bei periodonto ligų. </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="doctor">
+                <img src="img/daunoraviciute.jpg" alt="Gydytoja" class="doctor__img">
+                <h5 class="doctor__name">Skaistė Daunoravičiūtė</h5>
+                <div class="doctor__about">
+                <div class="doctor__specialty">
+                    <p>burnos higiena</p>
+                </div>
+                <div class="doctor__more">
+                    <p class="doctor__paragraph">Profesionali burnos higiena saugo sveiką burnos ertmę. </p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="contacts" id="kontaktai">
+            <h2 class="heading-2 mb-lg mt-md u-center">Kontaktai</h2>
+            <p class="contacts__paragraph">Klinikos adresas: Gatvės g. 15, Kaunas</p>
+            <a href="tel:8-600-0000" class="contacts__link">Tel.nr. 8 600 0000</a>
+            <div class="map">
+                <div class="map-responsive">
+                <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30900.446766610465!2d24.07144705951381!3d54.855703969575224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x416a153a8bcf19f5!2sDubravos%20pa%C5%BEintinis%20takas!5e0!3m2!1slt!2slt!4v1592473122818!5m2!1slt!2slt" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            
+
+
+        </section>
+
+
+        <footer class="footer">
+           <p class="footer__paragraph">Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" class="link link--dark" title="Kiranshastry">Kiranshastry, </a> <a href="https://www.flaticon.com/authors/freepik" class="link link--dark" title="Freepik">Freepik, </a><a href="https://www.flaticon.com/authors/bqlqn" class="link link--dark" title="bqlqn">bqlqn, </a> <a href="https://www.flaticon.com/authors/smalllikeart" class="link link--dark" title="smalllikeart">smalllikeart, </a> <a href="https://www.flaticon.com/authors/photo3idea-studio" class="link link--dark" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" class="link link--dark" title="Flaticon">www.flaticon.com. </a> <br> Pictures from <a href="https://unsplash.com/" class="link link--dark">"Unsplash - free images and photos."</a> </p> 
+            <p class="copyright">
+                &copy; Sukūrė/Created by <a href="https://www.facebook.com/AisteTamosauskiene" class="link link--light"> Aiste Tamos, </a> <script>document.write(new Date().getFullYear());</script>. 
+            </p>
+        </footer>
+
+        <div class="popup" id="registracija">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/doctor.jpg" alt="Photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#" class="popup__close">&times;</a>
+                    <form action="#" class="form">
+                                <div class="mb-lg">
+                                    <h2 class="heading-3">
+                                    Prisijungimas
+                                    </h2>
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="email" class="form__input" placeholder="El. pašto adresas" id="name" required>
+                                    <label for="name" class="form__label">Jūsų el. pašto adresas</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="password" class="form__input" placeholder="Slaptažodis" id="pass" minlength="6" required>
+                                    <label for="pass" class="form__label">Slaptažodis</label>
+                                </div>
+                                <div class="form__group">
+                                    <button class="btn">Prisijunkite &rarr;</button>
+                                </div>  
+                                <div class="form__group u-margin-bottom-medium">
+                                    <div class="form__radio-group">
+                                        <input type="radio" class="form__radio-input" id="new" name="size">
+                                        <label for="new" class="form__radio-label">
+                                            <span class="form__radio-button"></span>
+                                            Sukurti naują paskyrą</label>
+                                            <div class="form__group">
+                                                <button class="btn">Tęsti &rarr;</button>
+                                            </div>  
+                                    </div>
+                                </div>
+                            </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
