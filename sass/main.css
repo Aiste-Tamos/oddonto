@@ -941,7 +941,7 @@ p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 65%;
+  width: 70%;
   background-color: #ffff;
   -webkit-box-shadow: 0 2rem 4rem rgba(80, 83, 83, 0.2);
           box-shadow: 0 2rem 4rem rgba(80, 83, 83, 0.2);
@@ -999,6 +999,13 @@ p {
   opacity: 1;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
+}
+
+@media only screen and (min-width: 75em) {
+  .popup:target .popup__content {
+    -webkit-transform: translate(-50%, -40%) scale(0.8);
+            transform: translate(-50%, -40%) scale(0.8);
+  }
 }
 
 .popup__close:link, .popup__close:visited {
