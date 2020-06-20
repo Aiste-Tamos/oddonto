@@ -941,7 +941,7 @@ p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 75%;
+  width: 65%;
   background-color: #ffff;
   -webkit-box-shadow: 0 2rem 4rem rgba(80, 83, 83, 0.2);
           box-shadow: 0 2rem 4rem rgba(80, 83, 83, 0.2);
